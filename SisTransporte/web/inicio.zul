@@ -1,0 +1,73 @@
+<?link rel="stylesheet" type="text/css" href="/css/app/base.css"?>   
+<?link rel="stylesheet" type="text/css" href="/css/app/landing/signin.css"?>
+<?link rel="stylesheet" type="text/css" href="/css/app/menu.css"?>
+<?script src="https://kit.fontawesome.com/484b16c999.js"?>
+
+<?link rel="icon" type="image/x-icon" href="/iconos/defact.ico"?>  
+<?page title="Facturacion electrónica" contentType="text/html;charset=UTF-8"?>
+
+<zk contentStyle="" >
+
+    <div class='main_container' id="loginWin" apply="com.ec.controlador.LoginController"> 
+        <div class="wrapper">
+            <div class="nav">
+                <div class="logo_wrapper">
+                    <image src="./imagenes/logo/2.png" class="logo"/>
+                </div>
+            </div>
+            
+            <div class="info_wrapper">
+                <div class="form_wrapper">
+                    <div class="form">
+                        <div class="desc">
+                            <span>Inicia sesión</span>
+                            <span>Administrar tus facturas nunca ha sido tan facil!</span>
+                        </div>
+
+                        <div class="wrapper_container_input">
+                            <div class="wrapper_input">
+                                <div class="fa-solid fa-user icon" />
+                                <textbox id="account" type="text" class="input"
+                                         onCreate="self.focus()"
+                                         placeholder="Ingrese el usuario"   
+                                />
+                            </div>
+                            <div class="wrapper_input">
+                                <div class="fa-solid fa-key icon" />
+                                <textbox id="password" type="password" 
+                                         class="input" 
+                                         placeholder="Ingrese la constraseña" 
+                                />      
+                            </div>
+
+                            
+                            <div class="forgot">
+                                <span id="linkOlvideContrasena">Olvidaste tu contraseña?</span>  
+                                <span id="btnRegistra" >Realiza tu registro aquí</span>
+                            </div>
+                            
+                            
+                            <button 
+                                id="buttonEntrar" 
+                                class="main_btn" 
+                                label="Ingresar">
+                                Ingresar
+                            </button>   
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <image src="./imagenes/defact.png" class="banner_img"/>
+                </div>
+            </div>
+
+
+            <div class="foot">
+                <image src="https://deckxel.com/resource/img/wave.svg" class="wave"/>
+            </div>
+        </div>
+    </div>
+    
+</zk>
